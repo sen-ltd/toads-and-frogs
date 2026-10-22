@@ -1,0 +1,22 @@
+{
+  "name": "toads-and-frogs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Toads and Frogs in the browser with an exact combinatorial-game-theory engine: canonical values, thermographs (mean and temperature), every move marked winning or losing, and the published tables of Erickson (1996) and Thanatipanonda (2008) recomputed. TypeScript, no runtime deps.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "serve": "vite preview --port 4173",
+    "test": "vitest run",
+    "verify": "node tools/verify.mts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.5"
+  },
+  "license": "MIT"
+}

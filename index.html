@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toads and Frogs — exact values and thermographs</title>
+    <meta
+      name="description"
+      content="Toads and Frogs in the browser with an exact combinatorial game theory engine: every position gets its canonical game value (±1/8, {13/2 | 1}, 95/16, long infinitesimals), its thermograph, mean and temperature, every move marked as winning or losing, and a perfect computer opponent. Erickson's and Thanatipanonda's published tables are recomputed and checked."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23141518'/%3E%3Cellipse cx='10' cy='19' rx='7' ry='6' fill='%235cc27a'/%3E%3Cellipse cx='22' cy='19' rx='7' ry='6' fill='%23e8a04a'/%3E%3Ccircle cx='12' cy='13' r='2.4' fill='%23fff'/%3E%3Ccircle cx='20' cy='13' r='2.4' fill='%23fff'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Toads and Frogs <span>how hot is this position?</span></h1>
+        <p class="sub">
+          <strong class="toad-t">Toads</strong> (Left) move one square to the right, or jump a single frog into the empty
+          square beyond it. <strong class="frog-t">Frogs</strong> (Right) do the same to the left. Nobody is captured;
+          whoever cannot move loses. The side panel shows the exact <strong>game value</strong> of the position in
+          Conway's sense, and its <strong>thermograph</strong>: the <em>mean</em> is who is ahead and by how much, the
+          <em>temperature</em> is what it is worth to move first. With hints on, every move you may make is marked
+          <strong class="win-t">✓</strong> (keeps the win) or <strong class="lose-t">✗</strong> (hands it over).
+        </p>
+      </header>
+
+      <div id="wrap">
+        <div class="stage">
+          <div class="controls">
+            <label class="sel">position <select id="presetSel"></select></label>
+            <label class="sel">you play
+              <select id="youSel">
+                <option value="toads">Toads</option>
+                <option value="frogs">Frogs</option>
+              </select>
+            </label>
+            <label class="sel">first
+              <select id="firstSel">
+                <option value="toads">Toads</option>
+                <option value="frogs">Frogs</option>
+              </select>
+            </label>
+            <label class="sel chk"><input type="checkbox" id="hints" checked /> hints</label>
+            <button id="undo">Undo</button>
+            <button id="restart">Restart</button>
+            <button id="mode">Edit</button>
+          </div>
+          <div class="controls" id="palette" hidden>
+            <button id="shrink" title="remove the last square">− square</button>
+            <button id="grow" title="add a square">+ square</button>
+            <input id="boardText" spellcheck="false" aria-label="position" placeholder="T3□2F3" />
+            <button id="setText">Set</button>
+          </div>
+          <div id="boardwrap"><svg id="board" role="img" aria-label="Toads and Frogs strip"></svg></div>
+          <div id="status" aria-live="polite"></div>
+          <div id="moves"></div>
+        </div>
+        <div class="side">
+          <h3>value of the position</h3>
+          <div class="panel" id="value"></div>
+          <h3>thermograph</h3>
+          <div class="panel"><svg id="thermo" role="img" aria-label="thermograph"></svg>
+            <p class="dim small">Tax every move by t. The left wall is what the Toads get by moving first, the right
+              wall what the Frogs get; they meet at the temperature, and the mast above them is the mean.</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="notes">
+        <h2>How the values are computed</h2>
+        <p>
+          A position is a game {<em>Toads' options</em> | <em>Frogs' options</em>}. Before valuing it, the engine applies
+          Erickson's rules: a run of pieces from a TT to an FF can never move and splits the strip in two; a toad with
+          no frog ahead of it is worth exactly the empty squares in front of it, and so is a finished frog; and a
+          position whose only moves are jumps into single gaps is 0. What is left is valued from its options and reduced
+          to <em>canonical form</em> (dominated options deleted, reversible ones bypassed), so equal games get the same
+          id. The thermograph is built from the options' walls, and its mean adds up over sums.
+        </p>
+        <h2>Checked against the literature</h2>
+        <p>
+          The repository recomputes the published tables of Erickson (<em>New Toads and Frogs Results</em>, 1996) and
+          Thanatipanonda (<em>Further Hopping with Toads and Frogs</em>, 2008), their closed forms and conjectures, and
+          checks every value on every strip up to 12 squares against a plain win/lose search and against the same game
+          valued without any simplification rule.
+        </p>
+      </section>
+
+      <footer>
+        <p>
+          Built by <a href="https://sen.ltd/">SEN LLC</a>. TypeScript, no runtime
+          dependencies. <a href="https://github.com/sen-ltd/toads-and-frogs">Source</a>.
+        </p>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

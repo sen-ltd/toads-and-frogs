@@ -1,0 +1,90 @@
+{
+ "experiment": "symmetric",
+ "args": [
+  "5",
+  "8"
+ ],
+ "ms": 55027,
+ "node": "v26.3.0",
+ "cells": [
+  {
+   "a": 5,
+   "b": 1,
+   "value": "*",
+   "zero": false,
+   "star": true,
+   "infinitesimal": true,
+   "temperature": 0,
+   "published": "*",
+   "agrees": true,
+   "states": 29,
+   "ms": 61
+  },
+  {
+   "a": 5,
+   "b": 2,
+   "value": "{{2 | *}, {{5/2 | {2 | {0 | {{0 | {{↑* | 0} | −1}}, {0 | {{0 | {{{1/32 | 0} | 0} | −2}} | −1/2*}} | {{{↑* | 0} | −1/2} | −1*}}}}} | 0} | {* | −2}, {0 | {{{{{1* | {1/2 | {0 | ↓*}}} | {{1/2* | {{2 | {0 | {0 | −1/32}}} | 0}} | 0}, {{1 | {0 | ↓*}} | 0}} | 0} | −2} | −5/2}}}",
+   "zero": false,
+   "star": false,
+   "infinitesimal": true,
+   "temperature": 0,
+   "published": "N",
+   "agrees": true,
+   "states": 1896,
+   "ms": 47
+  },
+  {
+   "a": 5,
+   "b": 3,
+   "value": "*",
+   "zero": false,
+   "star": true,
+   "infinitesimal": true,
+   "temperature": 0,
+   "published": "*",
+   "agrees": true,
+   "states": 15045,
+   "ms": 445
+  },
+  {
+   "a": 5,
+   "b": 4,
+   "value": "*",
+   "zero": false,
+   "star": true,
+   "infinitesimal": true,
+   "temperature": 0,
+   "published": "*",
+   "agrees": true,
+   "states": 69460,
+   "ms": 2193
+  },
+  {
+   "a": 5,
+   "b": 5,
+   "value": "*",
+   "zero": false,
+   "star": true,
+   "infinitesimal": true,
+   "temperature": 0,
+   "published": "*",
+   "agrees": true,
+   "states": 241014,
+   "ms": 8007
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "value": "0",
+   "zero": true,
+   "star": false,
+   "infinitesimal": true,
+   "temperature": -1,
+   "published": "0",
+   "agrees": true,
+   "states": 698864,
+   "ms": 44266
+  }
+ ],
+ "games": 62028
+}

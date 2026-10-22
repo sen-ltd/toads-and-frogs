@@ -1,0 +1,272 @@
+{
+ "experiment": "literature",
+ "args": [],
+ "ms": 86106,
+ "node": "v26.3.0",
+ "total": 1733,
+ "failed": 1,
+ "checks": {
+  "erickson T^a□^bF^a": {
+   "checked": 26,
+   "failed": []
+  },
+  "erickson T^a□^bF^c": {
+   "checked": 86,
+   "failed": []
+  },
+  "thanatipanonda T^a□^bF^a": {
+   "checked": 42,
+   "failed": []
+  },
+  "thanatipanonda T^(a+1)□^bF^a": {
+   "checked": 30,
+   "failed": []
+  },
+  "thanatipanonda T^(a+2)□^bF^a": {
+   "checked": 25,
+   "failed": [
+    "T5□4F3 ({{5/2|2}|2}) = {{3* | 5/2} | 2}"
+   ]
+  },
+  "thanatipanonda T^(a+3)□^bF^a": {
+   "checked": 17,
+   "failed": []
+  },
+  "erickson lemma 4.1 □^aTF□^b": {
+   "checked": 162,
+   "failed": []
+  },
+  "erickson lemma 4.2 □^aTFTF□^b": {
+   "checked": 81,
+   "failed": []
+  },
+  "erickson lemma 4.3 □^aTTF□^b": {
+   "checked": 81,
+   "failed": []
+  },
+  "erickson lemma 4.4 □^aT^bF□^c": {
+   "checked": 243,
+   "failed": []
+  },
+  "erickson theorem 5.2 T^a□^bF": {
+   "checked": 81,
+   "failed": []
+  },
+  "erickson theorem 3.1 (TF)^mT□(TF)^n = 2^−n": {
+   "checked": 30,
+   "failed": []
+  },
+  "erickson corollary 3.2 (T□(TF)^nTTFF)^(2k+1)": {
+   "checked": 12,
+   "failed": []
+  },
+  "erickson theorem 3.3 TF□F□^(n+3) = {n|0}": {
+   "checked": 15,
+   "failed": []
+  },
+  "erickson theorem 3.5 T□TF□F□^n = {n+1/2|1} (printed \"{a+1/2|1}\")": {
+   "checked": 11,
+   "failed": []
+  },
+  "erickson theorem 7.7 TF□F□F□^a = {{a−6|−1}|−2}": {
+   "checked": 13,
+   "failed": []
+  },
+  "erickson lemma 6.3 T^n□F□F = 0": {
+   "checked": 11,
+   "failed": []
+  },
+  "erickson conj 7.1 / thanatipanonda thm: T^a□□F^b": {
+   "checked": 25,
+   "failed": []
+  },
+  "erickson conj 7.2: T^a□□□FF = (a−2)*": {
+   "checked": 11,
+   "failed": []
+  },
+  "erickson conj 7.3 / thanatipanonda thm: T^a□□□F^3 = a − 7/2": {
+   "checked": 7,
+   "failed": []
+  },
+  "thanatipanonda thm: T^a□□□F^b = {a−b|a−b}": {
+   "checked": 13,
+   "failed": []
+  },
+  "erickson conj 7.4: T^a□^aF^(a−1) = 1 or 1*": {
+   "checked": 6,
+   "failed": []
+  },
+  "thanatipanonda conj 1.1: □^RT^a□^bF□^R": {
+   "checked": 204,
+   "failed": []
+  },
+  "thanatipanonda conj 1.2: □^(R−1)T^a□^bF□^R": {
+   "checked": 168,
+   "failed": []
+  },
+  "thanatipanonda conj 1.3: □^LT^a□^bF□^R": {
+   "checked": 252,
+   "failed": []
+  },
+  "thanatipanonda conj 4: T^a□^bF^a ∈ {0, *} (b ≥ a)": {
+   "checked": 30,
+   "failed": []
+  },
+  "erickson conj 7.5: T^a□^bF^a infinitesimal": {
+   "checked": 41,
+   "failed": []
+  },
+  "thanatipanonda conj 3: T^a□^bF^a = * (a > b, b ≠ 2)": {
+   "checked": 8,
+   "failed": []
+  },
+  "disputed cell, by plain search on board − published": {
+   "checked": 2,
+   "failed": []
+  }
+ },
+ "disputes": [
+  {
+   "board": "T5□4F3",
+   "published": "{{3*|5/2}|2}",
+   "equal": true
+  },
+  {
+   "board": "T5□4F3",
+   "published": "{{5/2|2}|2}",
+   "equal": false
+  }
+ ],
+ "thm35": [
+  {
+   "n": 0,
+   "value": "*",
+   "temperature": 0,
+   "mean": 0
+  },
+  {
+   "n": 1,
+   "value": "1/2",
+   "temperature": -0.5,
+   "mean": 0.5
+  },
+  {
+   "n": 2,
+   "value": "1/2",
+   "temperature": -0.5,
+   "mean": 0.5
+  },
+  {
+   "n": 3,
+   "value": "1*",
+   "temperature": 0,
+   "mean": 1
+  },
+  {
+   "n": 4,
+   "value": "{3 | 1}",
+   "temperature": 1,
+   "mean": 2
+  },
+  {
+   "n": 5,
+   "value": "{5 | 1}",
+   "temperature": 2,
+   "mean": 3
+  },
+  {
+   "n": 6,
+   "value": "{13/2 | 1}",
+   "temperature": 2.75,
+   "mean": 3.75
+  },
+  {
+   "n": 7,
+   "value": "{15/2 | 1}",
+   "temperature": 3.25,
+   "mean": 4.25
+  },
+  {
+   "n": 8,
+   "value": "{17/2 | 1}",
+   "temperature": 3.75,
+   "mean": 4.75
+  },
+  {
+   "n": 9,
+   "value": "{19/2 | 1}",
+   "temperature": 4.25,
+   "mean": 5.25
+  },
+  {
+   "n": 10,
+   "value": "{21/2 | 1}",
+   "temperature": 4.75,
+   "mean": 5.75
+  },
+  {
+   "n": 11,
+   "value": "{23/2 | 1}",
+   "temperature": 5.25,
+   "mean": 6.25
+  },
+  {
+   "n": 12,
+   "value": "{25/2 | 1}",
+   "temperature": 5.75,
+   "mean": 6.75
+  },
+  {
+   "n": 13,
+   "value": "{27/2 | 1}",
+   "temperature": 6.25,
+   "mean": 7.25
+  },
+  {
+   "n": 14,
+   "value": "{29/2 | 1}",
+   "temperature": 6.75,
+   "mean": 7.75
+  },
+  {
+   "n": 15,
+   "value": "{31/2 | 1}",
+   "temperature": 7.25,
+   "mean": 8.25
+  },
+  {
+   "n": 16,
+   "value": "{33/2 | 1}",
+   "temperature": 7.75,
+   "mean": 8.75
+  }
+ ],
+ "conj74": [
+  {
+   "a": 1,
+   "value": "1"
+  },
+  {
+   "a": 2,
+   "value": "1"
+  },
+  {
+   "a": 3,
+   "value": "1*"
+  },
+  {
+   "a": 4,
+   "value": "1*"
+  },
+  {
+   "a": 5,
+   "value": "1"
+  },
+  {
+   "a": 6,
+   "value": "1"
+  }
+ ],
+ "pieceStates": 3515981,
+ "games": 209195
+}

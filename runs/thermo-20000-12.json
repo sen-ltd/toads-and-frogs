@@ -1,0 +1,18 @@
+{
+ "experiment": "thermo",
+ "args": [
+  "20000",
+  "12"
+ ],
+ "ms": 1206,
+ "node": "v26.3.0",
+ "count": 20000,
+ "maxLen": 12,
+ "hotPairs": 10000,
+ "meanBad": 0,
+ "tempBad": 0,
+ "sumBad": 0,
+ "knownBad": [],
+ "examples": [],
+ "pieceStates": 32012
+}
