@@ -153,3 +153,10 @@ node tools/report.mts                     # the tables above
 ## License
 
 MIT
+
+<!-- sen-publish:links -->
+## Links
+
+- 🌐 Demo: https://sen.ltd/portfolio/toads-and-frogs/
+- 📝 記事: https://qiita.com/sen-ltd/items/c843a4e683d68ca60c90
+<!-- /sen-publish:links -->
